@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>upkeep</title>
+    <link rel="stylesheet" href="css/styles.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/ctrls.js"></script>
+    <script src="js/factories.js"></script>
+  </head>
+  <body ng-app="upkeep">
+	<img src="images/eff.jpg" alt="" id="splash" />
+    <div id="appWrapper">
+      <div id="content" class="content">
+        <div class="home" ng-controller="KillCtrl"><img ng-mousedown="kill();" src="images/close.png" height="50" width="50"/></div>
+        <ui-view></ui-view>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+<div class="back"><a href="#/home"><img src="images/navback.png" height="47" width="47"/></a></div>
+	<h1 class="heading">{{headings | uppercase}}</h1>
+	<div class="great">
+		<a ui-sref="summary({subcategories: headings, summary: summaryGroup[item]})" ng-repeat="item in currentCategory" ><div class="insidegrid"><div class="inner-circle" ><img ng-src="{{iconGroup[item]}}"/></div><span class="insidecaption">{{item}}</span></div><img ng-click="create(summaryGroup[item])" class="add" src="images/add55.png"/></a>		
+	</div>

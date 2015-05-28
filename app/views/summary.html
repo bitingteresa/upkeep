@@ -1,0 +1,12 @@
+<div class="back"><a ui-sref='subcategories({subcategories: headings})'><img  src="images/navback.png" height="47" width="47"/></a></div>
+	<h1 class="insideheading">{{currentSummary | uppercase}}</h1> 
+	<div class="summary">
+		<div class="info">{{infoGroup[currentSummary]}}</div>
+		<div ng-show="!services.length"><span class="no-heading">No services recorded.</span></div> 
+		<div ng-repeat='object in services | orderBy: "-createdAt" | limitTo: 4'>
+			<div class="list"> 
+			<span class="list-heading"> Last Service Done: </span> {{object.dos.iso | date }}
+			</div>
+		</div>
+	 	</div>
+	<div class ="this-button"  ng-click="create(currentSummary)"><span id="add-button">Add</span></div>
