@@ -4,8 +4,8 @@
   angular.module('upkeep', [
       'ui.router',
       'upkeepFactories',
-      'upkeepCtrls'
-      'keys'
+      'upkeepCtrls',
+      'apiKeys',
     ])
     
       .config(function ($stateProvider) {
