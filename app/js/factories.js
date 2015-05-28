@@ -5,8 +5,8 @@
 	
 	.factory("ApiFactory", ["$q", "$http", function($q, $http) {
 		var apiUrl = 'https://api.parse.com/1/classes/auto';
-	  $http.defaults.headers.common['X-Parse-Application-Id'] = ;
-	  $http.defaults.headers.common['X-Parse-REST-API-Key'] = ;
+	  $http.defaults.headers.common['X-Parse-Application-Id'] = key1;
+	  $http.defaults.headers.common['X-Parse-REST-API-Key'] = key2;
 	  $http.defaults.headers.common['Content-Type'] = 'application/json';	
 	  	return {
 	     getData: function() {
