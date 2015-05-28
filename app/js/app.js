@@ -5,6 +5,7 @@
       'ui.router',
       'upkeepFactories',
       'upkeepCtrls'
+      'keys'
     ])
     
       .config(function ($stateProvider) {
